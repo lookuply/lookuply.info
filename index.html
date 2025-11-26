@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lookuply - Privacy-first search engine supporting all 24 EU languages. Open source, no tracking, no ads.">
+    <meta name="keywords" content="search engine, privacy, open source, EU languages, multilingual search">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Lookuply - Privacy-First Search Engine">
+    <meta property="og:description" content="Open-source search supporting 24 EU languages. Privacy-first, no tracking.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lookuply.info">
+
+    <title>Lookuply - Privacy-First Search Engine</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+                'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #1F2937;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 24px;
+            padding: 60px 40px;
+            max-width: 800px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 56px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 16px;
+            letter-spacing: -1px;
+        }
+
+        .tagline {
+            font-size: 24px;
+            color: #6B7280;
+            margin-bottom: 12px;
+            font-weight: 500;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #9CA3AF;
+            margin-bottom: 40px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #EEF2FF;
+            color: #6366F1;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 40px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+
+        .feature {
+            padding: 20px;
+        }
+
+        .feature-icon {
+            font-size: 40px;
+            margin-bottom: 12px;
+        }
+
+        .feature-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1F2937;
+            margin-bottom: 8px;
+        }
+
+        .feature-text {
+            font-size: 14px;
+            color: #6B7280;
+            line-height: 1.6;
+        }
+
+        .links {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: #F3F4F6;
+            color: #1F2937;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        .link:hover {
+            background: #E5E7EB;
+            transform: translateY(-2px);
+        }
+
+        .link-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .link-primary:hover {
+            background: linear-gradient(135deg, #5568d3 0%, #653a8b 100%);
+            transform: translateY(-2px);
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid #E5E7EB;
+            color: #9CA3AF;
+            font-size: 14px;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 40px 24px;
+            }
+
+            .logo {
+                font-size: 40px;
+            }
+
+            .tagline {
+                font-size: 20px;
+            }
+
+            .subtitle {
+                font-size: 16px;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="logo">Lookuply</h1>
+        <p class="tagline">Privacy-First Search Engine</p>
+        <p class="subtitle">Open source, no tracking, no ads</p>
+
+        <div class="badge">🚧 Coming Soon - Under Development</div>
+
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">🔒</div>
+                <div class="feature-title">Privacy First</div>
+                <div class="feature-text">No tracking, no data collection, no user profiling</div>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">🌍</div>
+                <div class="feature-title">24 EU Languages</div>
+                <div class="feature-text">Supporting all official European Union languages from day one</div>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">💻</div>
+                <div class="feature-title">Open Source</div>
+                <div class="feature-text">Transparent, auditable code. GPL-3.0 licensed</div>
+            </div>
+        </div>
+
+        <div class="links">
+            <a href="https://github.com/lookuply" class="link link-primary" target="_blank" rel="noopener">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+                GitHub
+            </a>
+
+            <a href="https://github.com/lookuply/docs" class="link" target="_blank" rel="noopener">
+                📚 Documentation
+            </a>
+
+            <a href="mailto:hello@lookuply.info" class="link">
+                ✉️ Contact
+            </a>
+        </div>
+
+        <div class="footer">
+            <p><strong>Lookuply</strong> - Building open-source search</p>
+            <p style="margin-top: 8px;">Supporting 24 EU languages • Privacy-focused • Community-driven</p>
+        </div>
+    </div>
+</body>
+</html>

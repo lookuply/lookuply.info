@@ -1,0 +1,29 @@
+name: Deploy to Production
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Deploy to server
+        uses: easingthemes/ssh-deploy@v4
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          REMOTE_HOST: 46.224.73.134
+          REMOTE_USER: lookuply
+          SOURCE: "index.html"
+          TARGET: "/tmp/lookuply-landing/"
+          SCRIPT_AFTER: |
+            sudo cp /tmp/lookuply-landing/index.html /var/www/html/index.html
+            sudo chown www-data:www-data /var/www/html/index.html
+            sudo chmod 644 /var/www/html/index.html
+            echo "✅ Deployment successful!"
