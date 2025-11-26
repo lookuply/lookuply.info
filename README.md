@@ -1,367 +1,175 @@
-# lookuply.info
+# Lookuply Landing Page
 
-**Landing page for Lookuply - Privacy-first search engine**
+Official landing page for [lookuply.info](https://lookuply.info) - Privacy-first search engine supporting 24 EU languages.
 
-Live at: [lookuply.info](https://lookuply.info)
+🌐 **Live:** https://lookuply.info
 
 ---
 
-## Overview
+## 🚀 Quick Start
 
-This repository contains the source code for the Lookuply landing page - a simple, fast, and beautiful introduction to our privacy-first search engine supporting all 24 EU languages.
+This is a simple, single-file HTML landing page with embedded CSS. Changes pushed to `main` branch are automatically deployed via GitHub Actions.
 
 ### Features
 
-- **Lightning Fast**: Static HTML/CSS/JS
+- **Single File**: Everything in `index.html`
+- **No Dependencies**: Pure HTML/CSS
 - **Responsive Design**: Works on all devices
-- **Minimal Dependencies**: No heavy frameworks
-- **SEO Optimized**: Meta tags, OpenGraph, structured data
-- **Multi-language**: Landing page in 24 languages
-- **Open Source**: MIT License
+- **Auto-Deploy**: GitHub Actions CI/CD
+- **Fast**: Served via Nginx + Cloudflare CDN
+- **Secure**: HTTPS with Let's Encrypt
 
 ---
 
-## Live Site
-
-🌐 **[lookuply.info](https://lookuply.info)**
-
----
-
-## Technology Stack
-
-- **HTML5**: Semantic markup
-- **CSS3**: Modern styling with CSS Grid/Flexbox
-- **Vanilla JavaScript**: No frameworks
-- **No tracking**: No analytics, no cookies
-- **Static hosting**: Cloudflare Pages / Nginx
-
----
-
-## Project Structure
+## 📁 Project Structure
 
 ```
 lookuply.info/
-├── index.html           # Main landing page
-├── css/
-│   ├── style.css        # Main stylesheet
-│   └── responsive.css   # Mobile styles
-├── js/
-│   ├── main.js          # Main JavaScript
-│   └── language.js      # Language switcher
-├── images/
-│   ├── logo.svg         # Lookuply logo
-│   └── hero.webp        # Hero image
-├── locales/             # Translations (24 languages)
-│   ├── en.json
-│   ├── de.json
-│   ├── fr.json
-│   └── ...
-└── public/              # Static assets
-    ├── favicon.ico
-    ├── robots.txt
-    └── sitemap.xml
+├── index.html                 # Landing page (all-in-one)
+├── .github/
+│   └── workflows/
+│       └── deploy.yml         # CI/CD workflow
+└── README.md                  # This file
 ```
+
+Simple and clean - just one HTML file with embedded CSS.
 
 ---
 
-## Local Development
+## 💻 Local Development
 
-### Prerequisites
+### Clone & Edit
 
 ```bash
-- Web browser
-- Local web server (optional)
-```
-
-### Running Locally
-
-**Option 1: Python SimpleHTTPServer**
-```bash
-# Clone repository
-git clone https://github.com/lookuply/lookuply.info.git
+git clone git@github.com:lookuply/lookuply.info.git
 cd lookuply.info
 
-# Start server
-python3 -m http.server 8000
+# Edit the landing page
+nano index.html
 
-# Open http://localhost:8000
+# Test locally - just open in browser
+open index.html
 ```
 
-**Option 2: Node.js http-server**
-```bash
-npm install -g http-server
-http-server -p 8000
-
-# Open http://localhost:8000
-```
-
-**Option 3: Just open the file**
-```bash
-# Simply open index.html in your browser
-open index.html  # macOS
-xdg-open index.html  # Linux
-```
-
----
-
-## Content Sections
-
-### 🏠 Hero Section
-
-```html
-<section class="hero">
-  <h1>Search the Web with Privacy</h1>
-  <p>Open-source search engine supporting 24 EU languages</p>
-  <a href="https://search.lookuply.info" class="cta-button">
-    Try Lookuply
-  </a>
-</section>
-```
-
-### ✨ Features
-
-- **Privacy-First**: No tracking, no data collection
-- **24 Languages**: All EU languages from day one
-- **Open Source**: Transparent, auditable code
-- **API Access**: Build your own applications
-- **Ad-Free**: Clean, focused search experience
-
-### 🌍 Language Support
-
-Visual showcase of all 24 supported languages with flags.
-
-### 🚀 Getting Started
-
-Quick links to:
-- Try the search
-- API documentation
-- GitHub repositories
-- Community
-
-### 📞 Contact
-
-- Email: hello@lookuply.info
-- GitHub: [@lookuply](https://github.com/lookuply)
-- Status: [status.lookuply.info](https://status.lookuply.info)
-
----
-
-## Design Guidelines
-
-### Color Palette
-
-```css
-:root {
-  --primary-color: #2563EB;    /* Blue */
-  --secondary-color: #10B981;  /* Green */
-  --text-dark: #1F2937;
-  --text-light: #6B7280;
-  --background: #FFFFFF;
-  --surface: #F9FAFB;
-}
-```
-
-### Typography
-
-```css
-font-family:
-  -apple-system, BlinkMacSystemFont,
-  'Segoe UI', 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans',
-  'Droid Sans', 'Helvetica Neue',
-  sans-serif;
-```
-
-### Responsive Breakpoints
-
-```css
-/* Mobile */
-@media (max-width: 640px) { }
-
-/* Tablet */
-@media (min-width: 641px) and (max-width: 1024px) { }
-
-/* Desktop */
-@media (min-width: 1025px) { }
-```
-
----
-
-## SEO Configuration
-
-### Meta Tags
-
-```html
-<meta name="description" content="Privacy-first search engine supporting 24 EU languages. Open source, no tracking, ad-free.">
-<meta name="keywords" content="search engine, privacy, open source, EU languages">
-```
-
-### OpenGraph
-
-```html
-<meta property="og:title" content="Lookuply - Privacy-First Search">
-<meta property="og:description" content="Open-source search engine supporting 24 EU languages">
-<meta property="og:image" content="https://lookuply.info/images/og-image.png">
-<meta property="og:url" content="https://lookuply.info">
-```
-
-### Structured Data
-
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Lookuply",
-  "url": "https://lookuply.info",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://search.lookuply.info/?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
-}
-```
-
----
-
-## Translations
-
-### Adding New Language
+### Deploy Changes
 
 ```bash
-# 1. Create translation file
-cp locales/en.json locales/sk.json
+git add index.html
+git commit -m "Update: description of changes"
+git push origin main
 
-# 2. Translate all strings
-{
-  "hero": {
-    "title": "Hľadajte na webe s ochranou súkromia",
-    "subtitle": "Open-source vyhľadávač podporujúci 24 jazykov EÚ",
-    "cta": "Vyskúšať Lookuply"
-  },
-  ...
-}
-
-# 3. Add language to switcher in language.js
-const languages = {
-  ...,
-  'sk': 'Slovenčina'
-};
-
-# 4. Test translation
+# GitHub Actions will automatically deploy!
+# Check: https://github.com/lookuply/lookuply.info/actions
 ```
 
----
-
-## Performance
-
-### Lighthouse Scores
-
-- **Performance**: 100/100
-- **Accessibility**: 100/100
-- **Best Practices**: 100/100
-- **SEO**: 100/100
-
-### Optimizations
-
-- Minified CSS/JS
-- WebP images with fallbacks
-- Preload critical resources
-- Async JavaScript loading
-- Service Worker (optional PWA)
+Changes go live at https://lookuply.info within ~1 minute.
 
 ---
 
-## Deployment
+## 🎨 Current Content
 
-### Cloudflare Pages
+### Landing Page Features
 
-```bash
-# Automatic deployment from GitHub
-# Push to main branch → auto-deploy
+- ✅ **Privacy First** - No tracking, no data collection, no user profiling
+- ✅ **24 EU Languages** - Supporting all official European Union languages
+- ✅ **Open Source** - Transparent, auditable code (GPL-3.0 licensed)
+
+### Links
+
+- GitHub: https://github.com/lookuply
+- Documentation: https://github.com/lookuply/docs
+- Contact: hello@lookuply.info
+
+### Design
+
+- **Theme**: Purple gradient (`#667eea` to `#764ba2`)
+- **Typography**: System fonts (-apple-system, BlinkMacSystemFont, Segoe UI, Roboto)
+- **Responsive**: Mobile-first design with media queries
+
+---
+
+## 🚀 Deployment
+
+### CI/CD Pipeline
+
+GitHub Actions automatically deploys on every push to `main` branch.
+
+**Workflow:** `.github/workflows/deploy.yml`
+
+```yaml
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    steps:
+      - name: Copy file via SCP
+        uses: appleboy/scp-action@v0.1.7
+
+      - name: Deploy file
+        uses: appleboy/ssh-action@v1.0.3
+        # Copies to /var/www/html/index.html
 ```
 
-### Nginx
-
-```nginx
-server {
-    listen 80;
-    server_name lookuply.info www.lookuply.info;
-
-    root /var/www/lookuply.info;
-    index index.html;
-
-    location / {
-        try_files $uri $uri/ =404;
-    }
-
-    # SSL configuration handled by Certbot
-}
+**Deployment Flow:**
+```
+Push to main → GitHub Actions → SCP to server → Deploy to Nginx
 ```
 
-### GitHub Pages
+### Infrastructure
 
-```bash
-# Enable GitHub Pages in repository settings
-# Select source: main branch / (root)
-# Custom domain: lookuply.info
-```
+- **Server**: Hetzner CPX41 (46.224.73.134)
+- **Web Server**: Nginx
+- **SSL**: Let's Encrypt (auto-renewal enabled, expires 2026-02-24)
+- **CDN**: Cloudflare (proxy enabled)
+- **DNS**: Cloudflare nameservers
 
----
+### Authentication
 
-## Contributing
-
-We welcome contributions to improve the landing page!
-
-### How to Contribute
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test locally
-5. Submit a pull request
-
-### What to Contribute
-
-- Design improvements
-- New translations
-- Performance optimizations
-- Accessibility enhancements
-- Bug fixes
+- **SSH Key**: RSA 4096-bit deployment key
+- **Stored**: GitHub Secrets → `SSH_PRIVATE_KEY`
+- **Server**: `/home/lookuply/.ssh/authorized_keys`
 
 ---
 
-## License
+## 📝 Status
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+✅ Landing page live
+✅ CI/CD pipeline working
+✅ SSL certificate active
+✅ Cloudflare CDN enabled
 
-You are free to:
-- ✅ Use commercially
-- ✅ Modify
-- ✅ Distribute
-- ✅ Private use
-
----
-
-## Related Projects
-
-- [lookuply/crawler](https://github.com/lookuply/crawler) - Web crawler (GPL-3.0)
-- [lookuply/indexer](https://github.com/lookuply/indexer) - Content indexing (GPL-3.0)
-- [lookuply/search-api](https://github.com/lookuply/search-api) - Search API (GPL-3.0)
-- [lookuply/frontend](https://github.com/lookuply/frontend) - Search interface (GPL-3.0)
-- [lookuply/infrastructure](https://github.com/lookuply/infrastructure) - Infrastructure (GPL-3.0)
-- [lookuply/docs](https://github.com/lookuply/docs) - Documentation (GPL-3.0)
+**Current:** Week 4 complete (Infrastructure + Landing Page)
+**Next:** Week 5 - Branding & Translations
 
 ---
 
-## Links
+## 🔗 Links
 
-- **Website**: [lookuply.info](https://lookuply.info)
-- **Search**: [search.lookuply.info](https://search.lookuply.info)
-- **API**: [api.lookuply.info](https://api.lookuply.info)
-- **Documentation**: [docs.lookuply.info](https://docs.lookuply.info)
-- **Status**: [status.lookuply.info](https://status.lookuply.info)
-- **GitHub**: [@lookuply](https://github.com/lookuply)
+- **Live Site**: https://lookuply.info
+- **GitHub Org**: https://github.com/lookuply
+- **Documentation**: https://github.com/lookuply/docs
+- **Contact**: hello@lookuply.info
 
 ---
 
-**Simple. Fast. Private. Open Source.**
+## 📄 License
+
+GPL-3.0 License - Open source, privacy-first search engine.
+
+---
+
+## 🏗️ Related Repositories
+
+- [lookuply/crawler](https://github.com/lookuply/crawler) - Web crawler
+- [lookuply/search-engine](https://github.com/lookuply/search-engine) - Search engine core
+- [lookuply/api](https://github.com/lookuply/api) - API service
+- [lookuply/frontend](https://github.com/lookuply/frontend) - Search interface
+- [lookuply/infrastructure](https://github.com/lookuply/infrastructure) - Infrastructure as code
+- [lookuply/docs](https://github.com/lookuply/docs) - Documentation
+
+---
+
+**Lookuply** - Privacy-first search • 24 EU languages • Open source • Community-driven
