@@ -14,15 +14,22 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Deploy to server
-        uses: easingthemes/ssh-deploy@v4
+      - name: Copy file via SCP
+        uses: appleboy/scp-action@v0.1.7
         with:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          REMOTE_HOST: 46.224.73.134
-          REMOTE_USER: lookuply
-          SOURCE: "index.html"
-          TARGET: "/tmp/lookuply-landing/"
-          SCRIPT_AFTER: |
+          host: 46.224.73.134
+          username: lookuply
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: "index.html"
+          target: "/tmp/lookuply-landing/"
+
+      - name: Deploy file
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: 46.224.73.134
+          username: lookuply
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
             sudo cp /tmp/lookuply-landing/index.html /var/www/html/index.html
             sudo chown www-data:www-data /var/www/html/index.html
             sudo chmod 644 /var/www/html/index.html
