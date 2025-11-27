@@ -20,8 +20,8 @@ server {
     add_header X-XSS-Protection "1; mode=block" always;
     add_header Referrer-Policy "strict-origin-when-cross-origin" always;
 
-    # Content Security Policy
-    add_header Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-ancestors 'self';" always;
+    # Content Security Policy (strict - no unsafe-inline)
+    add_header Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-ancestors 'self';" always;
 
     # Permissions Policy (formerly Feature-Policy)
     add_header Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=()" always;
@@ -74,6 +74,6 @@ With these headers, you should achieve:
 ## Notes
 
 - All headers are set with `always` flag to ensure they're sent even on error pages
-- CSP allows `unsafe-inline` for styles/scripts since we use inline CSS and JS
+- CSP is strict with NO `unsafe-inline` - all CSS and JS are in external files (style.css, app.js)
 - HSTS preload is enabled for maximum security
 - No tracking or analytics = maximum privacy
