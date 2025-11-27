@@ -14,16 +14,16 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Copy file via SCP
+      - name: Copy files via SCP
         uses: appleboy/scp-action@v0.1.7
         with:
           host: 46.224.73.134
           username: lookuply
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: "index.html"
+          source: "index.html,logo.svg,translations.json"
           target: "/tmp/lookuply-landing/"
 
-      - name: Deploy file
+      - name: Deploy files
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: 46.224.73.134
@@ -31,6 +31,8 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             sudo cp /tmp/lookuply-landing/index.html /var/www/html/index.html
-            sudo chown www-data:www-data /var/www/html/index.html
-            sudo chmod 644 /var/www/html/index.html
+            sudo cp /tmp/lookuply-landing/logo.svg /var/www/html/logo.svg
+            sudo cp /tmp/lookuply-landing/translations.json /var/www/html/translations.json
+            sudo chown www-data:www-data /var/www/html/index.html /var/www/html/logo.svg /var/www/html/translations.json
+            sudo chmod 644 /var/www/html/index.html /var/www/html/logo.svg /var/www/html/translations.json
             echo "✅ Deployment successful!"

@@ -328,5 +328,467 @@
       "description": "Suport pentru 24 limbi UE • Centrat pe confidențialitate • Condus de comunitate",
       "deployed": "🚀 Implementat automat prin GitHub Actions"
     }
+  },
+  "bg": {
+    "title": "Lookuply - Търсачка фокусирана върху поверителността",
+    "tagline": "Търсачка фокусирана върху поверителността",
+    "subtitle": "Отворен код, без проследяване, без реклами",
+    "badge": "🚧 Скоро - В разработка",
+    "features": {
+      "privacy": {
+        "icon": "🔒",
+        "title": "Поверителност на първо място",
+        "text": "Без проследяване, без събиране на данни, без профилиране"
+      },
+      "languages": {
+        "icon": "🌍",
+        "title": "24 езика на ЕС",
+        "text": "Поддръжка на всички официални езици на Европейския съюз от първия ден"
+      },
+      "opensource": {
+        "icon": "💻",
+        "title": "Отворен код",
+        "text": "Прозрачен, одитируем код. Лиценз GPL-3.0"
+      }
+    },
+    "links": {
+      "github": "GitHub",
+      "docs": "📚 Документация",
+      "contact": "✉️ Контакт"
+    },
+    "footer": {
+      "tagline": "Изграждаме търсачка с отворен код",
+      "description": "Поддръжка на 24 езика на ЕС • Фокусирана върху поверителността • Управлявана от общността",
+      "deployed": "🚀 Внедрено автоматично чрез GitHub Actions"
+    }
+  },
+  "hr": {
+    "title": "Lookuply - Tražilica usmjerena na privatnost",
+    "tagline": "Tražilica usmjerena na privatnost",
+    "subtitle": "Otvoreni kod, bez praćenja, bez oglasa",
+    "badge": "🚧 Uskoro - U razvoju",
+    "features": {
+      "privacy": {
+        "icon": "🔒",
+        "title": "Privatnost na prvom mjestu",
+        "text": "Bez praćenja, bez prikupljanja podataka, bez profiliranja"
+      },
+      "languages": {
+        "icon": "🌍",
+        "title": "24 jezika EU",
+        "text": "Podrška za sve službene jezike Europske unije od prvog dana"
+      },
+      "opensource": {
+        "icon": "💻",
+        "title": "Otvoreni kod",
+        "text": "Transparentan, provjerljiv kod. GPL-3.0 licenca"
+      }
+    },
+    "links": {
+      "github": "GitHub",
+      "docs": "📚 Dokumentacija",
+      "contact": "✉️ Kontakt"
+    },
+    "footer": {
+      "tagline": "Gradimo tražilicu otvorenog koda",
+      "description": "Podrška za 24 jezika EU • Usmjereno na privatnost • Vođeno zajednicom",
+      "deployed": "🚀 Automatski postavljeno putem GitHub Actions"
+    }
+  },
+  "da": {
+    "title": "Lookuply - Privatlivsfokuseret søgemaskine",
+    "tagline": "Privatlivsfokuseret søgemaskine",
+    "subtitle": "Open source, ingen sporing, ingen annoncer",
+    "badge": "🚧 Kommer snart - Under udvikling",
+    "features": {
+      "privacy": {
+        "icon": "🔒",
+        "title": "Privatlivfirst",
+        "text": "Ingen sporing, ingen dataindsamling, ingen profilering"
+      },
+      "languages": {
+        "icon": "🌍",
+        "title": "24 EU-sprog",
+        "text": "Understøttelse af alle officielle EU-sprog fra dag ét"
+      },
+      "opensource": {
+        "icon": "💻",
+        "title": "Open Source",
+        "text": "Gennemsigtig, kontrollerbar kode. GPL-3.0 licens"
+      }
+    },
+    "links": {
+      "github": "GitHub",
+      "docs": "📚 Dokumentation",
+      "contact": "✉️ Kontakt"
+    },
+    "footer": {
+      "tagline": "Bygger open source-søgning",
+      "description": "Understøttelse af 24 EU-sprog • Privatlivsfokuseret • Fællesskabsdrevet",
+      "deployed": "🚀 Automatisk implementeret via GitHub Actions"
+    }
+  },
+  "et": {
+    "title": "Lookuply - Privaatsusele keskendunud otsing",
+    "tagline": "Privaatsusele keskendunud otsing",
+    "subtitle": "Avatud lähtekood, jälgimine puudub, reklaamid puuduvad",
+    "badge": "🚧 Tulekul - Arendamisel",
+    "features": {
+      "privacy": {
+        "icon": "🔒",
+        "title": "Privaatsus esmalt",
+        "text": "Jälgimine puudub, andmete kogumine puudub, profileerimine puudub"
+      },
+      "languages": {
+        "icon": "🌍",
+        "title": "24 EL keelt",
+        "text": "Kõigi Euroopa Liidu ametlike keelte toetus alates esimesest päevast"
+      },
+      "opensource": {
+        "icon": "💻",
+        "title": "Avatud lähtekood",
+        "text": "Läbipaistev, auditeeritav kood. GPL-3.0 litsents"
+      }
+    },
+    "links": {
+      "github": "GitHub",
+      "docs": "📚 Dokumentatsioon",
+      "contact": "✉️ Kontakt"
+    },
+    "footer": {
+      "tagline": "Ehitame avatud lähtekoodiga otsingut",
+      "description": "24 EL keele toetus • Privaatsusele keskendunud • Kogukonna juhitud",
+      "deployed": "🚀 Automaatselt juurutatud GitHub Actionsi kaudu"
+    }
+  },
+  "fi": {
+    "title": "Lookuply - Yksityisyyteen keskittyvä hakukone",
+    "tagline": "Yksityisyyteen keskittyvä hakukone",
+    "subtitle": "Avoimen lähdekoodin, ei seurantaa, ei mainoksia",
+    "badge": "🚧 Tulossa pian - Kehityksessä",
+    "features": {
+      "privacy": {
+        "icon": "🔒",
+        "title": "Yksityisyys ensin",
+        "text": "Ei seurantaa, ei tiedonkeruuta, ei profilointia"
+      },
+      "languages": {
+        "icon": "🌍",
+        "title": "24 EU-kieltä",
+        "text": "Tuki kaikille Euroopan unionin virallisille kielille ensimmäisestä päivästä lähtien"
+      },
+      "opensource": {
+        "icon": "💻",
+        "title": "Avoimen lähdekoodin",
+        "text": "Läpinäkyvä, tarkastettava koodi. GPL-3.0 lisenssi"
+      }
+    },
+    "links": {
+      "github": "GitHub",
+      "docs": "📚 Dokumentaatio",
+      "contact": "✉️ Yhteystiedot"
+    },
+    "footer": {
+      "tagline": "Rakennamme avoimen lähdekoodin hakua",
+      "description": "Tuki 24 EU-kielelle • Yksityisyyteen keskittyvä • Yhteisön ohjaama",
+      "deployed": "🚀 Otettu käyttöön automaattisesti GitHub Actionsin kautta"
+    }
+  },
+  "el": {
+    "title": "Lookuply - Μηχανή αναζήτησης με επίκεντρο το απόρρητο",
+    "tagline": "Μηχανή αναζήτησης με επίκεντρο το απόρρητο",
+    "subtitle": "Ανοιχτού κώδικα, χωρίς παρακολούθηση, χωρίς διαφημίσεις",
+    "badge": "🚧 Σύντομα - Υπό ανάπτυξη",
+    "features": {
+      "privacy": {
+        "icon": "🔒",
+        "title": "Απόρρητο πρώτα",
+        "text": "Χωρίς παρακολούθηση, χωρίς συλλογή δεδομένων, χωρίς προφίλ"
+      },
+      "languages": {
+        "icon": "🌍",
+        "title": "24 γλώσσες ΕΕ",
+        "text": "Υποστήριξη όλων των επίσημων γλωσσών της Ευρωπαϊκής Ένωσης από την πρώτη ημέρα"
+      },
+      "opensource": {
+        "icon": "💻",
+        "title": "Ανοιχτού κώδικα",
+        "text": "Διαφανής, ελεγχόμενος κώδικας. Άδεια GPL-3.0"
+      }
+    },
+    "links": {
+      "github": "GitHub",
+      "docs": "📚 Τεκμηρίωση",
+      "contact": "✉️ Επικοινωνία"
+    },
+    "footer": {
+      "tagline": "Κατασκευάζουμε αναζήτηση ανοιχτού κώδικα",
+      "description": "Υποστήριξη 24 γλωσσών ΕΕ • Επίκεντρο το απόρρητο • Κοινοτική οδήγηση",
+      "deployed": "🚀 Αναπτύχθηκε αυτόματα μέσω GitHub Actions"
+    }
+  },
+  "hu": {
+    "title": "Lookuply - Adatvédelemre összpontosító keresőmotor",
+    "tagline": "Adatvédelemre összpontosító keresőmotor",
+    "subtitle": "Nyílt forráskód, nincs követés, nincs hirdetés",
+    "badge": "🚧 Hamarosan - Fejlesztés alatt",
+    "features": {
+      "privacy": {
+        "icon": "🔒",
+        "title": "Adatvédelem az első helyen",
+        "text": "Nincs követés, nincs adatgyűjtés, nincs profilalkotás"
+      },
+      "languages": {
+        "icon": "🌍",
+        "title": "24 EU nyelv",
+        "text": "Az Európai Unió összes hivatalos nyelvének támogatása az első naptól"
+      },
+      "opensource": {
+        "icon": "💻",
+        "title": "Nyílt forráskód",
+        "text": "Átlátható, ellenőrizhető kód. GPL-3.0 licenc"
+      }
+    },
+    "links": {
+      "github": "GitHub",
+      "docs": "📚 Dokumentáció",
+      "contact": "✉️ Kapcsolat"
+    },
+    "footer": {
+      "tagline": "Nyílt forráskódú keresést építünk",
+      "description": "24 EU nyelv támogatása • Adatvédelemre összpontosító • Közösség által vezérelt",
+      "deployed": "🚀 Automatikusan telepítve GitHub Actions-on keresztül"
+    }
+  },
+  "ga": {
+    "title": "Lookuply - Inneall cuardaigh dírithe ar phríobháideachas",
+    "tagline": "Inneall cuardaigh dírithe ar phríobháideachas",
+    "subtitle": "Foinse oscailte, gan rianú, gan fógraí",
+    "badge": "🚧 Ag teacht go luath - Faoi fhorbairt",
+    "features": {
+      "privacy": {
+        "icon": "🔒",
+        "title": "Príobháideachas ar dtús",
+        "text": "Gan rianú, gan bailiú sonraí, gan próifíliú"
+      },
+      "languages": {
+        "icon": "🌍",
+        "title": "24 teanga AE",
+        "text": "Tacaíocht do gach teanga oifigiúil den Aontas Eorpach ón gcéad lá"
+      },
+      "opensource": {
+        "icon": "💻",
+        "title": "Foinse Oscailte",
+        "text": "Cód trédhearcach, iniúchta. Ceadúnas GPL-3.0"
+      }
+    },
+    "links": {
+      "github": "GitHub",
+      "docs": "📚 Doiciméadú",
+      "contact": "✉️ Teagmháil"
+    },
+    "footer": {
+      "tagline": "Cuardach foinse oscailte á thógáil againn",
+      "description": "Tacaíocht do 24 teanga AE • Dírithe ar phríobháideachas • Tiomáinte ag an bpobal",
+      "deployed": "🚀 Imscartha go huathoibríoch trí GitHub Actions"
+    }
+  },
+  "lv": {
+    "title": "Lookuply - Uz privātumu orientēta meklētājprogramma",
+    "tagline": "Uz privātumu orientēta meklētājprogramma",
+    "subtitle": "Atvērtais kods, bez izsekošanas, bez reklāmām",
+    "badge": "🚧 Drīzumā - Izstrādes stadijā",
+    "features": {
+      "privacy": {
+        "icon": "🔒",
+        "title": "Privātums pirmajā vietā",
+        "text": "Bez izsekošanas, bez datu vākšanas, bez profilēšanas"
+      },
+      "languages": {
+        "icon": "🌍",
+        "title": "24 ES valodas",
+        "text": "Visu Eiropas Savienības oficiālo valodu atbalsts no pirmās dienas"
+      },
+      "opensource": {
+        "icon": "💻",
+        "title": "Atvērtais kods",
+        "text": "Pārredzams, auditējams kods. GPL-3.0 licence"
+      }
+    },
+    "links": {
+      "github": "GitHub",
+      "docs": "📚 Dokumentācija",
+      "contact": "✉️ Kontakti"
+    },
+    "footer": {
+      "tagline": "Veidojam atvērtā koda meklēšanu",
+      "description": "24 ES valodu atbalsts • Orientēts uz privātumu • Kopienas vadīts",
+      "deployed": "🚀 Automātiski izvietots caur GitHub Actions"
+    }
+  },
+  "lt": {
+    "title": "Lookuply - Privatumui skirta paieškos sistema",
+    "tagline": "Privatumui skirta paieškos sistema",
+    "subtitle": "Atviras kodas, be sekimo, be reklamų",
+    "badge": "🚧 Netrukus - Kuriama",
+    "features": {
+      "privacy": {
+        "icon": "🔒",
+        "title": "Privatumas pirmoje vietoje",
+        "text": "Be sekimo, be duomenų rinkimo, be profiliavimo"
+      },
+      "languages": {
+        "icon": "🌍",
+        "title": "24 ES kalbos",
+        "text": "Visų oficialių Europos Sąjungos kalbų palaikymas nuo pirmos dienos"
+      },
+      "opensource": {
+        "icon": "💻",
+        "title": "Atviras kodas",
+        "text": "Skaidrus, audituojamas kodas. GPL-3.0 licencija"
+      }
+    },
+    "links": {
+      "github": "GitHub",
+      "docs": "📚 Dokumentacija",
+      "contact": "✉️ Kontaktai"
+    },
+    "footer": {
+      "tagline": "Kuriame atviro kodo paiešką",
+      "description": "24 ES kalbų palaikymas • Skirta privatumui • Bendruomenės valdoma",
+      "deployed": "🚀 Automatiškai įdiegta per GitHub Actions"
+    }
+  },
+  "mt": {
+    "title": "Lookuply - Magna ta' tfittxija ffukata fuq il-privatezza",
+    "tagline": "Magna ta' tfittxija ffukata fuq il-privatezza",
+    "subtitle": "Kodiċi miftuħ, ebda traċċar, ebda reklami",
+    "badge": "🚧 Dalwaqt - Taħt żvilupp",
+    "features": {
+      "privacy": {
+        "icon": "🔒",
+        "title": "Privatezza l-ewwel",
+        "text": "Ebda traċċar, ebda ġbir ta' data, ebda profilar"
+      },
+      "languages": {
+        "icon": "🌍",
+        "title": "24 lingwa tal-UE",
+        "text": "Appoġġ għal-lingwi uffiċjali kollha tal-Unjoni Ewropea mill-ewwel jum"
+      },
+      "opensource": {
+        "icon": "💻",
+        "title": "Kodiċi Miftuħ",
+        "text": "Kodiċi trasparenti u verifkabbli. Liċenzja GPL-3.0"
+      }
+    },
+    "links": {
+      "github": "GitHub",
+      "docs": "📚 Dokumentazzjoni",
+      "contact": "✉️ Kuntatt"
+    },
+    "footer": {
+      "tagline": "Qed nibnu tfittxija b'kodiċi miftuħ",
+      "description": "Appoġġ għal 24 lingwa tal-UE • Iffukat fuq il-privatezza • Immexxi mill-komunità",
+      "deployed": "🚀 Skjerat awtomatikament permezz ta' GitHub Actions"
+    }
+  },
+  "pt": {
+    "title": "Lookuply - Motor de busca focado na privacidade",
+    "tagline": "Motor de busca focado na privacidade",
+    "subtitle": "Código aberto, sem rastreamento, sem anúncios",
+    "badge": "🚧 Em breve - Em desenvolvimento",
+    "features": {
+      "privacy": {
+        "icon": "🔒",
+        "title": "Privacidade em primeiro lugar",
+        "text": "Sem rastreamento, sem recolha de dados, sem perfis"
+      },
+      "languages": {
+        "icon": "🌍",
+        "title": "24 línguas da UE",
+        "text": "Suporte para todas as línguas oficiais da União Europeia desde o primeiro dia"
+      },
+      "opensource": {
+        "icon": "💻",
+        "title": "Código Aberto",
+        "text": "Código transparente e auditável. Licença GPL-3.0"
+      }
+    },
+    "links": {
+      "github": "GitHub",
+      "docs": "📚 Documentação",
+      "contact": "✉️ Contacto"
+    },
+    "footer": {
+      "tagline": "A construir pesquisa de código aberto",
+      "description": "Suporte para 24 línguas da UE • Focado na privacidade • Impulsionado pela comunidade",
+      "deployed": "🚀 Implementado automaticamente via GitHub Actions"
+    }
+  },
+  "sl": {
+    "title": "Lookuply - Iskalni program osredotočen na zasebnost",
+    "tagline": "Iskalni program osredotočen na zasebnost",
+    "subtitle": "Odprta koda, brez sledenja, brez oglasov",
+    "badge": "🚧 Kmalu - V razvoju",
+    "features": {
+      "privacy": {
+        "icon": "🔒",
+        "title": "Zasebnost najprej",
+        "text": "Brez sledenja, brez zbiranja podatkov, brez profiliranja"
+      },
+      "languages": {
+        "icon": "🌍",
+        "title": "24 jezikov EU",
+        "text": "Podpora za vse uradne jezike Evropske unije od prvega dne"
+      },
+      "opensource": {
+        "icon": "💻",
+        "title": "Odprta koda",
+        "text": "Pregledna, revizijska koda. Licenca GPL-3.0"
+      }
+    },
+    "links": {
+      "github": "GitHub",
+      "docs": "📚 Dokumentacija",
+      "contact": "✉️ Kontakt"
+    },
+    "footer": {
+      "tagline": "Gradimo iskanje odprte kode",
+      "description": "Podpora za 24 jezikov EU • Osredotočeno na zasebnost • Vodeno s strani skupnosti",
+      "deployed": "🚀 Samodejno nameščeno prek GitHub Actions"
+    }
+  },
+  "sv": {
+    "title": "Lookuply - Integritetsfokuserad sökmotor",
+    "tagline": "Integritetsfokuserad sökmotor",
+    "subtitle": "Öppen källkod, ingen spårning, inga annonser",
+    "badge": "🚧 Kommer snart - Under utveckling",
+    "features": {
+      "privacy": {
+        "icon": "🔒",
+        "title": "Integritet först",
+        "text": "Ingen spårning, ingen datainsamling, ingen profilering"
+      },
+      "languages": {
+        "icon": "🌍",
+        "title": "24 EU-språk",
+        "text": "Stöd för alla officiella EU-språk från dag ett"
+      },
+      "opensource": {
+        "icon": "💻",
+        "title": "Öppen källkod",
+        "text": "Transparent, granskningsbar kod. GPL-3.0-licens"
+      }
+    },
+    "links": {
+      "github": "GitHub",
+      "docs": "📚 Dokumentation",
+      "contact": "✉️ Kontakt"
+    },
+    "footer": {
+      "tagline": "Bygger sökning med öppen källkod",
+      "description": "Stöd för 24 EU-språk • Integritetsfokuserad • Gemenskapsdriven",
+      "deployed": "🚀 Automatiskt distribuerad via GitHub Actions"
+    }
   }
 }
