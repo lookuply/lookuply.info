@@ -1,0 +1,31 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Letter "L" with modern style -->
+  <path d="M 40 40 L 40 140 L 100 140 L 100 120 L 60 120 L 60 40 Z"
+        fill="url(#logoGradient)"
+        stroke="none"/>
+
+  <!-- Search circle (magnifying glass) integrated with "L" -->
+  <circle cx="130" cy="90" r="35"
+          fill="none"
+          stroke="url(#logoGradient)"
+          stroke-width="8"/>
+
+  <!-- Magnifying glass handle -->
+  <line x1="155" y1="115" x2="175" y2="135"
+        stroke="url(#logoGradient)"
+        stroke-width="8"
+        stroke-linecap="round"/>
+
+  <!-- Privacy shield element (subtle) -->
+  <path d="M 130 70 L 140 80 L 130 110 L 120 80 Z"
+        fill="#ffffff"
+        opacity="0.3"/>
+</svg>

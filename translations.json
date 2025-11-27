@@ -1,0 +1,332 @@
+{
+  "en": {
+    "title": "Lookuply - Privacy-First Search Engine",
+    "tagline": "Privacy-First Search Engine",
+    "subtitle": "Open source, no tracking, no ads",
+    "badge": "🚧 Coming Soon - Under Development",
+    "features": {
+      "privacy": {
+        "icon": "🔒",
+        "title": "Privacy First",
+        "text": "No tracking, no data collection, no user profiling"
+      },
+      "languages": {
+        "icon": "🌍",
+        "title": "24 EU Languages",
+        "text": "Supporting all official European Union languages from day one"
+      },
+      "opensource": {
+        "icon": "💻",
+        "title": "Open Source",
+        "text": "Transparent, auditable code. GPL-3.0 licensed"
+      }
+    },
+    "links": {
+      "github": "GitHub",
+      "docs": "📚 Documentation",
+      "contact": "✉️ Contact"
+    },
+    "footer": {
+      "tagline": "Building open-source search",
+      "description": "Supporting 24 EU languages • Privacy-focused • Community-driven",
+      "deployed": "🚀 Deployed automatically via GitHub Actions"
+    }
+  },
+  "sk": {
+    "title": "Lookuply - Vyhľadávač s ochranou súkromia",
+    "tagline": "Vyhľadávač s ochranou súkromia",
+    "subtitle": "Open source, bez sledovania, bez reklám",
+    "badge": "🚧 Čoskoro - Vo vývoji",
+    "features": {
+      "privacy": {
+        "icon": "🔒",
+        "title": "Súkromie na prvom mieste",
+        "text": "Žiadne sledovanie, žiadne zbieranie dát, žiadne profilovanie"
+      },
+      "languages": {
+        "icon": "🌍",
+        "title": "24 jazykov EÚ",
+        "text": "Podpora všetkých oficiálnych jazykov Európskej únie od prvého dňa"
+      },
+      "opensource": {
+        "icon": "💻",
+        "title": "Open Source",
+        "text": "Transparentný, auditovateľný kód. Licencia GPL-3.0"
+      }
+    },
+    "links": {
+      "github": "GitHub",
+      "docs": "📚 Dokumentácia",
+      "contact": "✉️ Kontakt"
+    },
+    "footer": {
+      "tagline": "Budujeme open-source vyhľadávač",
+      "description": "Podpora 24 jazykov EÚ • Zameraný na súkromie • Komunitný projekt",
+      "deployed": "🚀 Automaticky nasadené cez GitHub Actions"
+    }
+  },
+  "de": {
+    "title": "Lookuply - Datenschutzorientierte Suchmaschine",
+    "tagline": "Datenschutzorientierte Suchmaschine",
+    "subtitle": "Open Source, kein Tracking, keine Werbung",
+    "badge": "🚧 Demnächst - In Entwicklung",
+    "features": {
+      "privacy": {
+        "icon": "🔒",
+        "title": "Datenschutz zuerst",
+        "text": "Kein Tracking, keine Datenerfassung, kein Profiling"
+      },
+      "languages": {
+        "icon": "🌍",
+        "title": "24 EU-Sprachen",
+        "text": "Unterstützung aller offiziellen Sprachen der Europäischen Union von Anfang an"
+      },
+      "opensource": {
+        "icon": "💻",
+        "title": "Open Source",
+        "text": "Transparenter, überprüfbarer Code. GPL-3.0 lizenziert"
+      }
+    },
+    "links": {
+      "github": "GitHub",
+      "docs": "📚 Dokumentation",
+      "contact": "✉️ Kontakt"
+    },
+    "footer": {
+      "tagline": "Wir bauen eine Open-Source-Suchmaschine",
+      "description": "Unterstützung für 24 EU-Sprachen • Datenschutzorientiert • Community-getrieben",
+      "deployed": "🚀 Automatisch über GitHub Actions bereitgestellt"
+    }
+  },
+  "fr": {
+    "title": "Lookuply - Moteur de recherche axé sur la confidentialité",
+    "tagline": "Moteur de recherche axé sur la confidentialité",
+    "subtitle": "Open source, sans suivi, sans publicité",
+    "badge": "🚧 Bientôt disponible - En développement",
+    "features": {
+      "privacy": {
+        "icon": "🔒",
+        "title": "Confidentialité d'abord",
+        "text": "Aucun suivi, aucune collecte de données, aucun profilage"
+      },
+      "languages": {
+        "icon": "🌍",
+        "title": "24 langues de l'UE",
+        "text": "Support de toutes les langues officielles de l'Union européenne dès le premier jour"
+      },
+      "opensource": {
+        "icon": "💻",
+        "title": "Open Source",
+        "text": "Code transparent et vérifiable. Licence GPL-3.0"
+      }
+    },
+    "links": {
+      "github": "GitHub",
+      "docs": "📚 Documentation",
+      "contact": "✉️ Contact"
+    },
+    "footer": {
+      "tagline": "Construire une recherche open source",
+      "description": "Support de 24 langues UE • Axé sur la confidentialité • Piloté par la communauté",
+      "deployed": "🚀 Déployé automatiquement via GitHub Actions"
+    }
+  },
+  "es": {
+    "title": "Lookuply - Motor de búsqueda centrado en la privacidad",
+    "tagline": "Motor de búsqueda centrado en la privacidad",
+    "subtitle": "Código abierto, sin rastreo, sin anuncios",
+    "badge": "🚧 Próximamente - En desarrollo",
+    "features": {
+      "privacy": {
+        "icon": "🔒",
+        "title": "Privacidad primero",
+        "text": "Sin rastreo, sin recopilación de datos, sin perfiles de usuario"
+      },
+      "languages": {
+        "icon": "🌍",
+        "title": "24 idiomas de la UE",
+        "text": "Compatible con todos los idiomas oficiales de la Unión Europea desde el primer día"
+      },
+      "opensource": {
+        "icon": "💻",
+        "title": "Código Abierto",
+        "text": "Código transparente y auditable. Licencia GPL-3.0"
+      }
+    },
+    "links": {
+      "github": "GitHub",
+      "docs": "📚 Documentación",
+      "contact": "✉️ Contacto"
+    },
+    "footer": {
+      "tagline": "Construyendo búsqueda de código abierto",
+      "description": "Soporte para 24 idiomas UE • Enfocado en privacidad • Impulsado por la comunidad",
+      "deployed": "🚀 Desplegado automáticamente vía GitHub Actions"
+    }
+  },
+  "cs": {
+    "title": "Lookuply - Vyhledávač se zaměřením na soukromí",
+    "tagline": "Vyhledávač se zaměřením na soukromí",
+    "subtitle": "Open source, bez sledování, bez reklam",
+    "badge": "🚧 Brzy - Ve vývoji",
+    "features": {
+      "privacy": {
+        "icon": "🔒",
+        "title": "Soukromí na prvním místě",
+        "text": "Žádné sledování, žádné shromažďování dat, žádné profilování"
+      },
+      "languages": {
+        "icon": "🌍",
+        "title": "24 jazyků EU",
+        "text": "Podpora všech oficiálních jazyků Evropské unie od prvního dne"
+      },
+      "opensource": {
+        "icon": "💻",
+        "title": "Open Source",
+        "text": "Transparentní, auditovatelný kód. Licence GPL-3.0"
+      }
+    },
+    "links": {
+      "github": "GitHub",
+      "docs": "📚 Dokumentace",
+      "contact": "✉️ Kontakt"
+    },
+    "footer": {
+      "tagline": "Budujeme open-source vyhledávač",
+      "description": "Podpora 24 jazyků EU • Zaměřeno na soukromí • Komunitní projekt",
+      "deployed": "🚀 Automaticky nasazeno přes GitHub Actions"
+    }
+  },
+  "it": {
+    "title": "Lookuply - Motore di ricerca incentrato sulla privacy",
+    "tagline": "Motore di ricerca incentrato sulla privacy",
+    "subtitle": "Open source, nessun tracciamento, nessuna pubblicità",
+    "badge": "🚧 Prossimamente - In sviluppo",
+    "features": {
+      "privacy": {
+        "icon": "🔒",
+        "title": "Privacy al primo posto",
+        "text": "Nessun tracciamento, nessuna raccolta dati, nessun profilazione"
+      },
+      "languages": {
+        "icon": "🌍",
+        "title": "24 lingue UE",
+        "text": "Supporto per tutte le lingue ufficiali dell'Unione Europea fin dal primo giorno"
+      },
+      "opensource": {
+        "icon": "💻",
+        "title": "Open Source",
+        "text": "Codice trasparente e verificabile. Licenza GPL-3.0"
+      }
+    },
+    "links": {
+      "github": "GitHub",
+      "docs": "📚 Documentazione",
+      "contact": "✉️ Contatto"
+    },
+    "footer": {
+      "tagline": "Costruiamo una ricerca open source",
+      "description": "Supporto per 24 lingue UE • Incentrato sulla privacy • Guidato dalla comunità",
+      "deployed": "🚀 Distribuito automaticamente tramite GitHub Actions"
+    }
+  },
+  "pl": {
+    "title": "Lookuply - Wyszukiwarka z naciskiem na prywatność",
+    "tagline": "Wyszukiwarka z naciskiem na prywatność",
+    "subtitle": "Open source, bez śledzenia, bez reklam",
+    "badge": "🚧 Wkrótce - W rozwoju",
+    "features": {
+      "privacy": {
+        "icon": "🔒",
+        "title": "Prywatność przede wszystkim",
+        "text": "Bez śledzenia, bez zbierania danych, bez profilowania"
+      },
+      "languages": {
+        "icon": "🌍",
+        "title": "24 języki UE",
+        "text": "Obsługa wszystkich oficjalnych języków Unii Europejskiej od pierwszego dnia"
+      },
+      "opensource": {
+        "icon": "💻",
+        "title": "Open Source",
+        "text": "Przejrzysty, audytowalny kod. Licencja GPL-3.0"
+      }
+    },
+    "links": {
+      "github": "GitHub",
+      "docs": "📚 Dokumentacja",
+      "contact": "✉️ Kontakt"
+    },
+    "footer": {
+      "tagline": "Budujemy wyszukiwarkę open source",
+      "description": "Obsługa 24 języków UE • Skoncentrowany na prywatności • Kierowany przez społeczność",
+      "deployed": "🚀 Automatycznie wdrożone przez GitHub Actions"
+    }
+  },
+  "nl": {
+    "title": "Lookuply - Privacy-gerichte zoekmachine",
+    "tagline": "Privacy-gerichte zoekmachine",
+    "subtitle": "Open source, geen tracking, geen advertenties",
+    "badge": "🚧 Binnenkort - In ontwikkeling",
+    "features": {
+      "privacy": {
+        "icon": "🔒",
+        "title": "Privacy eerst",
+        "text": "Geen tracking, geen gegevensverzameling, geen gebruikersprofilering"
+      },
+      "languages": {
+        "icon": "🌍",
+        "title": "24 EU-talen",
+        "text": "Ondersteuning van alle officiële talen van de Europese Unie vanaf dag één"
+      },
+      "opensource": {
+        "icon": "💻",
+        "title": "Open Source",
+        "text": "Transparante, controleerbare code. GPL-3.0 gelicentieerd"
+      }
+    },
+    "links": {
+      "github": "GitHub",
+      "docs": "📚 Documentatie",
+      "contact": "✉️ Contact"
+    },
+    "footer": {
+      "tagline": "Bouwen aan open-source zoeken",
+      "description": "Ondersteuning voor 24 EU-talen • Privacy-gericht • Community-gedreven",
+      "deployed": "🚀 Automatisch geïmplementeerd via GitHub Actions"
+    }
+  },
+  "ro": {
+    "title": "Lookuply - Motor de căutare centrat pe confidențialitate",
+    "tagline": "Motor de căutare centrat pe confidențialitate",
+    "subtitle": "Open source, fără urmărire, fără reclame",
+    "badge": "🚧 În curând - În dezvoltare",
+    "features": {
+      "privacy": {
+        "icon": "🔒",
+        "title": "Confidențialitate mai întâi",
+        "text": "Fără urmărire, fără colectare de date, fără profilare"
+      },
+      "languages": {
+        "icon": "🌍",
+        "title": "24 limbi UE",
+        "text": "Suport pentru toate limbile oficiale ale Uniunii Europene din prima zi"
+      },
+      "opensource": {
+        "icon": "💻",
+        "title": "Open Source",
+        "text": "Cod transparent și verificabil. Licență GPL-3.0"
+      }
+    },
+    "links": {
+      "github": "GitHub",
+      "docs": "📚 Documentație",
+      "contact": "✉️ Contact"
+    },
+    "footer": {
+      "tagline": "Construim căutare open source",
+      "description": "Suport pentru 24 limbi UE • Centrat pe confidențialitate • Condus de comunitate",
+      "deployed": "🚀 Implementat automat prin GitHub Actions"
+    }
+  }
+}
