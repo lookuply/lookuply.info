@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Main page with language alternatives -->
+  <url>
+    <loc>https://lookuply.info/</loc>
+    <lastmod>2025-11-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+
+    <!-- Language alternatives -->
+    <xhtml:link rel="alternate" hreflang="en" href="https://lookuply.info/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://lookuply.info/?lang=sk"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lookuply.info/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lookuply.info/?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lookuply.info/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://lookuply.info/?lang=cs"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lookuply.info/?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://lookuply.info/?lang=pl"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lookuply.info/?lang=nl"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://lookuply.info/?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://lookuply.info/?lang=bg"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://lookuply.info/?lang=hr"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://lookuply.info/?lang=da"/>
+    <xhtml:link rel="alternate" hreflang="et" href="https://lookuply.info/?lang=et"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://lookuply.info/?lang=fi"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://lookuply.info/?lang=el"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://lookuply.info/?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="ga" href="https://lookuply.info/?lang=ga"/>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://lookuply.info/?lang=lv"/>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://lookuply.info/?lang=lt"/>
+    <xhtml:link rel="alternate" hreflang="mt" href="https://lookuply.info/?lang=mt"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://lookuply.info/?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://lookuply.info/?lang=sl"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://lookuply.info/?lang=sv"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lookuply.info/"/>
+  </url>
+
+</urlset>

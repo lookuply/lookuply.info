@@ -10,6 +10,11 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="alternate icon" href="favicon.svg">
 
+    <!-- Performance optimizations -->
+    <link rel="preload" href="translations.json" as="fetch" crossorigin="anonymous">
+    <link rel="dns-prefetch" href="https://github.com">
+    <link rel="preconnect" href="https://github.com" crossorigin>
+
     <!-- Open Graph -->
     <meta property="og:title" content="Lookuply - Privacy-First Search Engine">
     <meta property="og:description" content="Open-source search supporting 24 EU languages. Privacy-first, no tracking.">
@@ -26,6 +31,40 @@
     <meta name="twitter:image" content="https://lookuply.info/og-image.svg">
 
     <title data-i18n="title">Lookuply - Privacy-First Search Engine</title>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Lookuply",
+      "url": "https://lookuply.info",
+      "description": "Privacy-first search engine supporting all 24 EU languages. Open source, no tracking, no ads.",
+      "inLanguage": ["en", "sk", "de", "fr", "es", "cs", "it", "pl", "nl", "ro", "bg", "hr", "da", "et", "fi", "el", "hu", "ga", "lv", "lt", "mt", "pt", "sl", "sv"],
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://lookuply.info/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      },
+      "creator": {
+        "@type": "Organization",
+        "name": "Lookuply",
+        "url": "https://lookuply.info",
+        "logo": "https://lookuply.info/logo.svg",
+        "sameAs": [
+          "https://github.com/lookuply"
+        ]
+      },
+      "keywords": "search engine, privacy, open source, EU languages, multilingual search, no tracking",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Privacy-conscious users, EU citizens, Open source community"
+      }
+    }
+    </script>
 
     <style>
         * {

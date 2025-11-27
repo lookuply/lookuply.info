@@ -1,0 +1,14 @@
+# Lookuply - Privacy-First Search Engine
+# https://lookuply.info
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://lookuply.info/sitemap.xml
+
+# Rate limiting for crawlers
+Crawl-delay: 1
+
+# Disallow private/sensitive paths (none for now)
+# Disallow: /private/

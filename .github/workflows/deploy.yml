@@ -20,7 +20,7 @@ jobs:
           host: 46.224.73.134
           username: lookuply
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: "index.html,logo.svg,translations.json,favicon.svg,og-image.svg"
+          source: "index.html,logo.svg,translations.json,favicon.svg,og-image.svg,robots.txt,sitemap.xml"
           target: "/tmp/lookuply-landing/"
 
       - name: Deploy files
@@ -35,6 +35,8 @@ jobs:
             sudo cp /tmp/lookuply-landing/translations.json /var/www/html/translations.json
             sudo cp /tmp/lookuply-landing/favicon.svg /var/www/html/favicon.svg
             sudo cp /tmp/lookuply-landing/og-image.svg /var/www/html/og-image.svg
-            sudo chown www-data:www-data /var/www/html/index.html /var/www/html/logo.svg /var/www/html/translations.json /var/www/html/favicon.svg /var/www/html/og-image.svg
-            sudo chmod 644 /var/www/html/index.html /var/www/html/logo.svg /var/www/html/translations.json /var/www/html/favicon.svg /var/www/html/og-image.svg
+            sudo cp /tmp/lookuply-landing/robots.txt /var/www/html/robots.txt
+            sudo cp /tmp/lookuply-landing/sitemap.xml /var/www/html/sitemap.xml
+            sudo chown www-data:www-data /var/www/html/index.html /var/www/html/logo.svg /var/www/html/translations.json /var/www/html/favicon.svg /var/www/html/og-image.svg /var/www/html/robots.txt /var/www/html/sitemap.xml
+            sudo chmod 644 /var/www/html/index.html /var/www/html/logo.svg /var/www/html/translations.json /var/www/html/favicon.svg /var/www/html/og-image.svg /var/www/html/robots.txt /var/www/html/sitemap.xml
             echo "✅ Deployment successful!"
