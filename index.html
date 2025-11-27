@@ -12,7 +12,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lookuply.info">
 
-    <title>Lookuply - Privacy-First Search Engine</title>
+    <title data-i18n="title">Lookuply - Privacy-First Search Engine</title>
 
     <style>
         * {
@@ -34,6 +34,35 @@
             padding: 20px;
         }
 
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .lang-select {
+            padding: 8px 12px;
+            border-radius: 8px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            background: rgba(255, 255, 255, 0.95);
+            color: #1F2937;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .lang-select:hover {
+            background: white;
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .lang-select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
         .container {
             background: white;
             border-radius: 24px;
@@ -42,6 +71,7 @@
             width: 100%;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
             text-align: center;
+            position: relative;
         }
 
         .logo {
@@ -152,6 +182,11 @@
         }
 
         @media (max-width: 640px) {
+            .lang-switcher {
+                top: 10px;
+                right: 10px;
+            }
+
             .container {
                 padding: 40px 24px;
             }
@@ -175,30 +210,60 @@
     </style>
 </head>
 <body>
+    <!-- Language Switcher -->
+    <div class="lang-switcher">
+        <select class="lang-select" id="langSelect">
+            <option value="en">🇬🇧 English</option>
+            <option value="bg">🇧🇬 Български</option>
+            <option value="cs">🇨🇿 Čeština</option>
+            <option value="da">🇩🇰 Dansk</option>
+            <option value="de">🇩🇪 Deutsch</option>
+            <option value="el">🇬🇷 Ελληνικά</option>
+            <option value="es">🇪🇸 Español</option>
+            <option value="et">🇪🇪 Eesti</option>
+            <option value="fi">🇫🇮 Suomi</option>
+            <option value="fr">🇫🇷 Français</option>
+            <option value="ga">🇮🇪 Gaeilge</option>
+            <option value="hr">🇭🇷 Hrvatski</option>
+            <option value="hu">🇭🇺 Magyar</option>
+            <option value="it">🇮🇹 Italiano</option>
+            <option value="lt">🇱🇹 Lietuvių</option>
+            <option value="lv">🇱🇻 Latviešu</option>
+            <option value="mt">🇲🇹 Malti</option>
+            <option value="nl">🇳🇱 Nederlands</option>
+            <option value="pl">🇵🇱 Polski</option>
+            <option value="pt">🇵🇹 Português</option>
+            <option value="ro">🇷🇴 Română</option>
+            <option value="sk">🇸🇰 Slovenčina</option>
+            <option value="sl">🇸🇮 Slovenščina</option>
+            <option value="sv">🇸🇪 Svenska</option>
+        </select>
+    </div>
+
     <div class="container">
         <h1 class="logo">Lookuply</h1>
-        <p class="tagline">Privacy-First Search Engine</p>
-        <p class="subtitle">Open source, no tracking, no ads</p>
+        <p class="tagline" data-i18n="tagline">Privacy-First Search Engine</p>
+        <p class="subtitle" data-i18n="subtitle">Open source, no tracking, no ads</p>
 
-        <div class="badge">🚧 Coming Soon - Under Development</div>
+        <div class="badge" data-i18n="badge">🚧 Coming Soon - Under Development</div>
 
         <div class="features">
             <div class="feature">
-                <div class="feature-icon">🔒</div>
-                <div class="feature-title">Privacy First</div>
-                <div class="feature-text">No tracking, no data collection, no user profiling</div>
+                <div class="feature-icon" data-i18n="features.privacy.icon">🔒</div>
+                <div class="feature-title" data-i18n="features.privacy.title">Privacy First</div>
+                <div class="feature-text" data-i18n="features.privacy.text">No tracking, no data collection, no user profiling</div>
             </div>
 
             <div class="feature">
-                <div class="feature-icon">🌍</div>
-                <div class="feature-title">24 EU Languages</div>
-                <div class="feature-text">Supporting all official European Union languages from day one</div>
+                <div class="feature-icon" data-i18n="features.languages.icon">🌍</div>
+                <div class="feature-title" data-i18n="features.languages.title">24 EU Languages</div>
+                <div class="feature-text" data-i18n="features.languages.text">Supporting all official European Union languages from day one</div>
             </div>
 
             <div class="feature">
-                <div class="feature-icon">💻</div>
-                <div class="feature-title">Open Source</div>
-                <div class="feature-text">Transparent, auditable code. GPL-3.0 licensed</div>
+                <div class="feature-icon" data-i18n="features.opensource.icon">💻</div>
+                <div class="feature-title" data-i18n="features.opensource.title">Open Source</div>
+                <div class="feature-text" data-i18n="features.opensource.text">Transparent, auditable code. GPL-3.0 licensed</div>
             </div>
         </div>
 
@@ -207,23 +272,116 @@
                 <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
                 </svg>
-                GitHub
+                <span data-i18n="links.github">GitHub</span>
             </a>
 
             <a href="https://github.com/lookuply/docs" class="link" target="_blank" rel="noopener">
-                📚 Documentation
+                <span data-i18n="links.docs">📚 Documentation</span>
             </a>
 
             <a href="mailto:hello@lookuply.info" class="link">
-                ✉️ Contact
+                <span data-i18n="links.contact">✉️ Contact</span>
             </a>
         </div>
 
         <div class="footer">
-            <p><strong>Lookuply</strong> - Building open-source search</p>
-            <p style="margin-top: 8px;">Supporting 24 EU languages • Privacy-focused • Community-driven</p>
-            <p style="margin-top: 12px; font-size: 12px; opacity: 0.6;">🚀 Deployed automatically via GitHub Actions</p>
+            <p><strong>Lookuply</strong> - <span data-i18n="footer.tagline">Building open-source search</span></p>
+            <p style="margin-top: 8px;" data-i18n="footer.description">Supporting 24 EU languages • Privacy-focused • Community-driven</p>
+            <p style="margin-top: 12px; font-size: 12px; opacity: 0.6;" data-i18n="footer.deployed">🚀 Deployed automatically via GitHub Actions</p>
         </div>
     </div>
+
+    <script>
+        // Language management
+        const TRANSLATIONS_URL = 'translations.json';
+        let translations = {};
+        let currentLang = 'en';
+
+        // Detect browser language
+        function detectBrowserLanguage() {
+            const browserLang = navigator.language || navigator.userLanguage;
+            const langCode = browserLang.split('-')[0].toLowerCase();
+
+            // Check if we support this language
+            const supportedLangs = ['en', 'sk', 'de', 'fr', 'es', 'cs', 'it', 'pl', 'nl', 'ro',
+                                   'bg', 'hr', 'da', 'et', 'fi', 'el', 'hu', 'ga', 'lv', 'lt',
+                                   'mt', 'pt', 'sl', 'sv'];
+
+            return supportedLangs.includes(langCode) ? langCode : 'en';
+        }
+
+        // Get value from nested object path
+        function getNestedValue(obj, path) {
+            return path.split('.').reduce((current, key) => current?.[key], obj);
+        }
+
+        // Apply translations to page
+        function applyTranslations(lang) {
+            if (!translations[lang]) return;
+
+            const elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                const value = getNestedValue(translations[lang], key);
+
+                if (value) {
+                    if (el.tagName === 'TITLE') {
+                        document.title = value;
+                    } else {
+                        el.textContent = value;
+                    }
+                }
+            });
+
+            // Update HTML lang attribute
+            document.documentElement.lang = lang;
+
+            // Update meta tags
+            const ogTitle = document.querySelector('meta[property="og:title"]');
+            const ogDesc = document.querySelector('meta[property="og:description"]');
+            const metaDesc = document.querySelector('meta[name="description"]');
+
+            if (ogTitle && translations[lang].title) {
+                ogTitle.content = translations[lang].title;
+            }
+            if (ogDesc && translations[lang].tagline) {
+                ogDesc.content = translations[lang].tagline + ' - ' + translations[lang].subtitle;
+            }
+            if (metaDesc && translations[lang].subtitle) {
+                metaDesc.content = 'Lookuply - ' + translations[lang].tagline + '. ' + translations[lang].subtitle;
+            }
+        }
+
+        // Load translations
+        async function loadTranslations() {
+            try {
+                const response = await fetch(TRANSLATIONS_URL);
+                translations = await response.json();
+
+                // Get saved language or detect browser language
+                const savedLang = localStorage.getItem('lookuply_lang');
+                currentLang = savedLang || detectBrowserLanguage();
+
+                // Set select value
+                const langSelect = document.getElementById('langSelect');
+                langSelect.value = currentLang;
+
+                // Apply translations
+                applyTranslations(currentLang);
+            } catch (error) {
+                console.error('Failed to load translations:', error);
+            }
+        }
+
+        // Handle language change
+        document.getElementById('langSelect').addEventListener('change', (e) => {
+            currentLang = e.target.value;
+            localStorage.setItem('lookuply_lang', currentLang);
+            applyTranslations(currentLang);
+        });
+
+        // Load translations when page loads
+        document.addEventListener('DOMContentLoaded', loadTranslations);
+    </script>
 </body>
 </html>
