@@ -164,6 +164,16 @@ body {
     font-size: 14px;
 }
 
+.footer-description {
+    margin-top: 8px;
+}
+
+.footer-deployed {
+    margin-top: 12px;
+    font-size: 12px;
+    opacity: 0.6;
+}
+
 @media (max-width: 640px) {
     .lang-switcher {
         top: 10px;
