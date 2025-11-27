@@ -20,7 +20,7 @@ jobs:
           host: 46.224.73.134
           username: lookuply
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: "index.html,logo.svg,translations.json,favicon.svg,og-image.svg,robots.txt,sitemap.xml"
+          source: "index.html,logo.svg,translations.json,favicon.svg,og-image.svg,robots.txt,sitemap.xml,app.js,style.css"
           target: "/tmp/lookuply-landing/"
 
       - name: Deploy files
@@ -37,6 +37,8 @@ jobs:
             sudo cp /tmp/lookuply-landing/og-image.svg /var/www/html/og-image.svg
             sudo cp /tmp/lookuply-landing/robots.txt /var/www/html/robots.txt
             sudo cp /tmp/lookuply-landing/sitemap.xml /var/www/html/sitemap.xml
-            sudo chown www-data:www-data /var/www/html/index.html /var/www/html/logo.svg /var/www/html/translations.json /var/www/html/favicon.svg /var/www/html/og-image.svg /var/www/html/robots.txt /var/www/html/sitemap.xml
-            sudo chmod 644 /var/www/html/index.html /var/www/html/logo.svg /var/www/html/translations.json /var/www/html/favicon.svg /var/www/html/og-image.svg /var/www/html/robots.txt /var/www/html/sitemap.xml
+            sudo cp /tmp/lookuply-landing/app.js /var/www/html/app.js
+            sudo cp /tmp/lookuply-landing/style.css /var/www/html/style.css
+            sudo chown www-data:www-data /var/www/html/index.html /var/www/html/logo.svg /var/www/html/translations.json /var/www/html/favicon.svg /var/www/html/og-image.svg /var/www/html/robots.txt /var/www/html/sitemap.xml /var/www/html/app.js /var/www/html/style.css
+            sudo chmod 644 /var/www/html/index.html /var/www/html/logo.svg /var/www/html/translations.json /var/www/html/favicon.svg /var/www/html/og-image.svg /var/www/html/robots.txt /var/www/html/sitemap.xml /var/www/html/app.js /var/www/html/style.css
             echo "✅ Deployment successful!"
