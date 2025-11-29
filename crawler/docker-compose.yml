@@ -1,0 +1,64 @@
+version: '3.8'
+
+services:
+  redis:
+    image: redis:7-alpine
+    container_name: lookuply-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  crawler-en:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: lookuply-crawler-en
+    environment:
+      - LANGUAGE=en
+      - REDIS_URL=redis://redis:6379/0
+    depends_on:
+      redis:
+        condition: service_healthy
+    volumes:
+      - ./data:/app/data
+    command: python -m scrapy crawl web_spider -a language=en
+
+  crawler-de:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: lookuply-crawler-de
+    environment:
+      - LANGUAGE=de
+      - REDIS_URL=redis://redis:6379/0
+    depends_on:
+      redis:
+        condition: service_healthy
+    volumes:
+      - ./data:/app/data
+    command: python -m scrapy crawl web_spider -a language=de
+
+  crawler-fr:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: lookuply-crawler-fr
+    environment:
+      - LANGUAGE=fr
+      - REDIS_URL=redis://redis:6379/0
+    depends_on:
+      redis:
+        condition: service_healthy
+    volumes:
+      - ./data:/app/data
+    command: python -m scrapy crawl web_spider -a language=fr
+
+volumes:
+  redis_data:

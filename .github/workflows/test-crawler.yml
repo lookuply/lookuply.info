@@ -1,0 +1,74 @@
+name: Test Crawler Configuration
+
+on:
+  push:
+    branches: [ main, master, develop ]
+    paths:
+      - 'crawler/**'
+      - '.github/workflows/test-crawler.yml'
+  pull_request:
+    branches: [ main, master, develop ]
+    paths:
+      - 'crawler/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r crawler/requirements.txt
+
+    - name: Download fastText model
+      run: python crawler/download_fasttext_model.py
+
+    - name: Run crawler configuration tests
+      run: python crawler/test_crawler_config.py
+
+    - name: Verify project structure
+      run: |
+        ls -la crawler/
+        python -c "from crawler.config_languages import get_language_count; print(f'Languages: {get_language_count()}')"
+
+    - name: Test language detection
+      run: |
+        python -c "
+        from crawler.language_detector import LanguageDetector
+        detector = LanguageDetector()
+        text = 'Hello, this is a test'
+        lang, conf = detector.detect(text)
+        print(f'Test detection: {lang} ({conf:.3f})')
+        assert lang == 'en', f'Expected en, got {lang}'
+        print('✓ Language detection working')
+        "
+
+    - name: Test content extraction
+      run: |
+        python -c "
+        from crawler.content_extractor import ContentExtractor
+        extractor = ContentExtractor()
+        html = '<html><title>Test</title><p>Content</p></html>'
+        result = extractor.extract(html, 'http://example.com')
+        assert result['title'] == 'Test', 'Title extraction failed'
+        print('✓ Content extraction working')
+        "
+
+    - name: Upload test results
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: test-results
+        path: |
+          *.log
+          test-results/
